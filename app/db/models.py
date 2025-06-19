@@ -2,7 +2,7 @@ from sqlalchemy import BigInteger, DateTime
 from sqlalchemy.orm import Mapped, mapped_column, DeclarativeBase
 from sqlalchemy.ext.asyncio import AsyncAttrs, async_sessionmaker, create_async_engine
 
-engine = create_async_engine(url='sqlite+aiosqlite:///db.sqlite3',
+engine = create_async_engine(url='DB_URL',
                              echo=True)
 
 async_session = async_sessionmaker(engine)
