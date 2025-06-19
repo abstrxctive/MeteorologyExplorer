@@ -11,7 +11,6 @@ import aiohttp
 from dotenv import load_dotenv
 from typing import Optional, Dict
 
-
 from load import city_data
 import app.keyboards as kb
 from app.db.requests import set_user
