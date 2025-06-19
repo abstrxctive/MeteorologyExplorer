@@ -96,7 +96,8 @@ async def get_fast_weather(message: Message, state: FSMContext):
                         'pressure_mb': current['pressure_mb'],
                         'precip_mm': current['precip_mm'],
                         'cloud': current['cloud'],
-                        'last_updated': current['last_updated']}
+                        'last_updated': current['last_updated']
+                    }
 
         except Exception:
             raise
