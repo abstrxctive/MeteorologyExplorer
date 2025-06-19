@@ -36,10 +36,9 @@ antispam_middleware = AntiSpamMiddleware(
 async def main():
     try:
 
-        # Инициализация диспетчера
         await async_main()
+        # Инициализация диспетчера
         dp = Dispatcher()
-
         dp.message.middleware(antispam_middleware)
 
         # Подключение роутеров
