@@ -29,7 +29,8 @@ antispam_middleware = AntiSpamMiddleware(
     max_requests=5,     # Количество запросов
     max_violations=3,   # Количество нарушений для блокировки
     ban_time=300,       # Время блокировки 300с = 5мин
-    bot=bot)             # Добавление бота в конструктор
+    bot=bot             # Добавление бота в конструктор
+)
 
 # Функция запуска всех зависимостей
 async def main():
