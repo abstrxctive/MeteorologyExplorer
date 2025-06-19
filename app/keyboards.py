@@ -19,4 +19,5 @@ inline_menu = InlineKeyboardMarkup(inline_keyboard=[
     [InlineKeyboardButton(text='Прогноз погоды на 1 день', callback_data='get_weather_one')],
     [InlineKeyboardButton(text="Прогноз погоды на 3 дня", callback_data="get_weather")],
     [InlineKeyboardButton(text="ГМЦ прогноз для одного города", callback_data="gmc_forecast")],
-    [InlineKeyboardButton(text="ГМЦ прогноз для нескольких городов", callback_data="gmc_forecast_more")]])
+    [InlineKeyboardButton(text="ГМЦ прогноз для нескольких городов", callback_data="gmc_forecast_more")]
+])
