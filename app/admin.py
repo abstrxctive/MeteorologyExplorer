@@ -13,7 +13,7 @@ admin = Router()
 
 class Admin(Filter):
     async def __call__(self, message: Message):
-        return message.from_user.id in [104152xxxx, 779221xxxx]
+        return message.from_user.id in [id1, id2]
 
 # Обработчик ввода сообщения рассылки
 @admin.message(Admin(), Command('newsletter'))
